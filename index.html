@@ -1,125 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PinPong</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        html {
-            height: 100%;
-        }
-
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        .container-img {
-            width: 400px;
-            border-radius: 10px;
-        }
-
-        .btn {
-            padding: 10px;
-            font-weight: bold;
-            color: #fff;
-            border: none;
-            margin-top: 60px;
-        }
-
-        .btn:hover {
-            opacity: 0.8;
-        }
-
-        .btnplayer1 {
-            background-color: green;
-            margin-right: 20px;
-        }
-
-        .btnplayer2 {
-            background-color: aqua;
-        }
-
-        .reset {
-            margin-top: 25px;
-            color: #fff;
-            background-color: red;
-            width: 180px;
-            margin-bottom: 80px;
-        }
-
-        a {
-            text-decoration: none;
-            color: red;
-        }
-
-        a:hover {
-            color: blue;
-        }
-
-        .tele {
-            margin-right: 30px;
-        }
-
-        .green {
-            color: green;
-        }
-
-        .red {
-            color: red;
-        }
-
-        select {
-            padding: 10px 30px 10px 10px;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <img class="container-img" src="./img/pinpong-bg.jpg" alt="" width="500">
+      <img
+        class="container-img"
+        src="./img/img.jpg"
+        alt=""
+        height="230"
+        width="440"
+      />
 
-        <h2>PingPong ScoreKeeper</h2>
+      <h1 class="heading">PING PONG</h1>
 
-        <h1>
-            <span class="player1score">0</span>
-            to
-            <span class="player2score">0</span>
-        </h1>
-        <select name="" id="pinpong">
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-        </select>
-        <div>
-            <button class="btn btnplayer1">Player1+</button>
-            <button class="btn btnplayer2">Player2+</button>
-            <br>
-            <button class="btn reset">Reset</button>
-        </div>
-        <div class="footer">
-            <a class="tele" href="https://t.me/mukhammadovvvv" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a>
-            <a class="insta" href="" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-        </div>
+      <h1 class="title">
+        <span class="player1score">0</span>
+        to
+        <span class="player2score">0</span>
+      </h1>
+      <select name="" id="pinpong">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+      </select>
+      <div>
+        <button class="btn btnplayer1">Player1+</button>
+        <button class="btn btnplayer2">Player2+</button>
+        <br />
+        <button class="btn reset">Reset</button>
+      </div>
+      <div class="footer">
+        <a class="tele" href="https://t.me/mukhammadov_7777" target="_blank"
+          ><i class="fa-brands fa-telegram"></i> Telegram</a
+        >
+        <a class="insta" href="" target="_blank"
+          ><i class="fa-brands fa-instagram"></i> Instagram</a
+        >
+      </div>
     </div>
 
     <!-- JAVASCRIPT -->
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
